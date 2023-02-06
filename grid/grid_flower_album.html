@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .container {
+        display: grid;
+        height: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 250px);
+      }
+      .box {
+        /* height: 100px;
+            width: 100px; */
+      }
+      .box1 {
+        background-color: red;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .box2 {
+        background-color: green;
+      }
+      .box3 {
+        background-color: yellow;
+      }
+      .box4 {
+        background-color: pink;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .box5 {
+        background-color: brown;
+      }
+      .box6 {
+        background-color: purple;
+      }
+      .box7 {
+        background-color: violet;
+      }
+      .box8 {
+        background-color: yellowgreen;
+      }
+      .box9 {
+        background: magenta;
+      }
+      .box10 {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Grid Album -->
+    <div class="container">
+      <div class="box box1">
+        <div class="box box5">
+          <img src="img/pic100.jpg" alt="picten" height="499px" width="499px" />
+        </div>
+      </div>
+      <div class="box box2">
+        <img src="img/pic1.jpg" alt="picone" height="250px" width="450px" />
+      </div>
+      <div class="box box3">
+        <img src="img/pic2.jpg" alt="pictwo" height="250px" width="500px" />
+      </div>
+      <div class="box box4">
+        <img src="img/pic3.jpg" alt="picthree" height="350px" width="920px" />
+      </div>
+      <div class="box box5">
+        <img src="img/pic4.jpg" alt="picfour" height="400px" width="499px" />
+      </div>
+      <div class="box box6">
+        <img src="img/pic5.jpg" alt="picfive" height="300px" width="450px" />
+      </div>
+      <div class="box box7">
+        <img src="img/pic6.jpg" alt="picsix" height="250px" width="450px" />
+      </div>
+      <div class="box box8">
+        <img src="img/pic7.jpg" alt="picseven" height="520px" width="500px" />
+      </div>
+      <div class="box box9">
+        <img src="img/pic8.jpg" alt="piceight" height="520px" width="450px" />
+      </div>
+      <div class="box box10">
+        <img src="img/pic9.jpg" alt="picnine" height="520px" width="500px" />
+      </div>
+    </div>
+  </body>
+</html>
