@@ -26,7 +26,7 @@
   grid-row-end: 5;
   color: white;
   text-align: center;
-  padding: 150px;
+  padding-top: 8em;
   font-size: 25px;
 }
 .box3 {
@@ -37,6 +37,29 @@
   grid-column-end: 5;
   color: white;
   text-align: center;
-  padding: 200px;
+  padding-top: 10em;
   font-size: 25px;
 }
+.box4 {
+  background-color: rgb(88, 209, 195);
+  grid-column-start: 7;
+  grid-column-end: 1;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  font-size: 25px;
+  margin: 8px 55px 60px 3px;
+}
+.boxx {
+  display: flex;
+  gap: 5rem;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.boxx1 {
+  display: flex;
+  background-color: rgb(196, 219, 217);
+  height: 3rem;
+  padding: 45px;
+}
+
