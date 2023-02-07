@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: rgb(236, 220, 220);
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: rgb(45, 142, 58);
+  padding: 15px 20px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  width: fit-content;
+}
+button:hover {
+  background-color: white;
+  color: rgb(45, 142, 58);
+  border: 1px solid black;
+}
+
+header {
+  padding: 15px 0;
+}
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .logo {
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 5em;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: 500;
+  margin-right: 40em;
+}
+
+nav ul li a {
+  color: #000000;
+}
+nav ul li:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section-left {
+  width: 40%;
+}
+.hero-section-left h1 {
+  font-size: 60px;
+}
+.hero-section-left p {
+  margin: 5% 0;
+}
+
+.hero-section-right {
+  padding: 7%;
+}
+
+.hero-section-right div img {
+  width: 30%;
+}
+.hero-section-right div img:first-child {
+  margin-right: 20px;
+}
+.hero-section-right div {
+  margin-bottom: 20px;
+}
+.hero-section-right > img {
+  width: 64%;
+}
