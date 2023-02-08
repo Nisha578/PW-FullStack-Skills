@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Red Rose', cursive;
+  }
+
+  li {
+    list-style: none;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  button {
+    background-color: rgb(238, 85, 85);
+    padding: 5px 25px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgb(238, 85, 85);
+    font-size: 18px;
+    font-weight: 600;
+    width: fit-content;
+  }
+  button:hover {
+    background-color: white;
+    color: rgb(238, 85, 85);
+    border: 1px solid rgb(238, 85, 85);
+  }
+
+
+  header {
+    padding: 15px 40px;
+  }
+    
+  nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+  
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    font-weight: 500;
+    margin-right: 10em;
+  }
+  
+nav ul li a{
+    display: flex;
+    color: #ffc233;
+    gap: 2em;
+    align-items: center;
+    font-weight: 500;
+}
+  a:hover {
+    text-decoration: underline;
+    font-weight: 900;
+  }
+
+  .main {
+    max-width: 1154px;
+    margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  }
+  .center-main {
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 70px;
+    color: rgb(242, 198, 65);
+    margin-bottom: 25px;
+  }
+
+  .scroll {
+     padding: 10px 70px;
+     margin-left: 65em;
+     cursor: pointer;
+    
+  }
+
+ .scrollimage {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+ }
+  
