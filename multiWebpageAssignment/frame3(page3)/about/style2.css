@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(233, 239, 238);
+}
+
+header {
+  padding: 25px 5px;
+}
+.logo {
+  scale: 0.9;
+  padding-right: 29em;
+  padding-top: 1.5em;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 9em;
+}
+
+nav ul li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.center-section {
+  margin-top: 10em;
+  margin-left: 30em;
+}
+.center h3 {
+  margin-left: 3em;
+  font-size: 23px;
+  color: rgb(41, 187, 119);
+}
+.center p {
+  margin-top: 1em;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.box {
+  margin-top: 2.5em;
+  display: flex;
+  gap: 2em;
+}
+.box1 {
+  box-shadow: 0 0 10px black;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+
+.box1 p {
+  color: rgb(41, 187, 119);
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.box div p:first-child {
+  margin-left: 16px;
+}
+
+.box div:first-child,
+.box div:last-child {
+  margin-left: 20px;
+}
+
+.box div p:last-child {
+  font-size: 17px;
+  color: #000;
+}
+.p2 {
+  margin-left: 12px;
+}
