@@ -1,6 +1,6 @@
 // Password Validator
-let password = "01234abc";
-let confirmpassword = "01234abc";
+let password =  String(prompt('Enter password: '));
+let confirmpassword =  String(prompt('Enter confirm password: '));
 
 if(password == confirmpassword) {
     console.log("Password Matched. Password validation Successful.");
