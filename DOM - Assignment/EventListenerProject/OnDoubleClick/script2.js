@@ -1,5 +1,5 @@
 const boxElement = document.getElementById("box");
 
-boxElement.addEventListener("click", function() {
+boxElement.addEventListener("dblclick", function() {
     alert("you just double clicked me 👍");
 });
