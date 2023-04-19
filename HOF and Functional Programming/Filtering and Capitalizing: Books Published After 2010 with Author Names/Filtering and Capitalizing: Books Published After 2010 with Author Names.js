@@ -16,7 +16,7 @@ const books = [
   ];
 
   // Filter books published after 2010 and capitalize author names
-  const filteredBooks = books.filter(book => book.year <= 2010).map(book => {
+  const filteredBooks = books.filter(book => book.year >= 2010).map(book => {
     return {
           title: book.title,
           author: book.author.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
