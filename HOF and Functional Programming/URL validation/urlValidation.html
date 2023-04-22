@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Validation</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- url validation -->
+    <h1>URL Validation</h1>
+    <!-- <p id="url" style="font-size: 20px; font-weight: bold;"></p> -->
+    <div>
+      <input
+        id="url"
+        placeholder="Enter url"
+        style="
+          font-size: 20px;
+          font-weight: bold;
+          border-radius: 10px;
+          border: 0.5px solid grey;
+          padding: 4px;
+        "
+      />
+      <button
+        onclick="urlvalidate()"
+        style="
+          border: none;
+          padding: 6px;
+          color: white;
+          background-color: black;
+          border-radius: 10px;
+        "
+      >
+        click here
+      </button>
+    </div>
+    <p id="container" style="font-size: 20px; font-weight: bold"></p>
+
+    <!-- Javascript  -->
+    <script>
+      function urlvalidate() {
+        const url = document.getElementById("url").value;
+        const container = document.getElementById("container");
+
+        let expression =
+          /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
+        const regex = new RegExp(expression);
+        let res = "";
+        if (url.match(regex)) {
+          res = "Valid URL";
+          container.style.color = "green";
+        } else {
+          res = "Invalid URL";
+          container.style.color = "red";
+        }
+        container.innerHTML = res;
+      }
+    </script>
+  </body>
+</html>
