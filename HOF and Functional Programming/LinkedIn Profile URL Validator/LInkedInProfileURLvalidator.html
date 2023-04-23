@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Profile URL Validator</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- LinkedIn Profile URL Validator -->
+    <h1>LinkedIn Profile URL Validator</h1>
+    <div>
+      <input
+        id="url"
+        placeholder="Enter url"
+        style="
+          font-size: 20px;
+          font-weight: bold;
+          border-radius: 10px;
+          border: 0.5px solid grey;
+          padding: 4px;
+        "
+      />
+      <button
+        onclick="LinkedInurlvalidate()"
+        style="
+          border: none;
+          padding: 6px;
+          color: white;
+          background-color: black;
+          border-radius: 10px;
+        "
+      >
+        click here
+      </button>
+    </div>
+    <p id="container" style="font-size: 20px; font-weight: bold"></p>
+
+    <!-- Javascript  -->
+    <script>
+      function LinkedInurlvalidate() {
+        const url = document.getElementById("url").value;
+        const container = document.getElementById("container");
+
+        let expression =
+          /^https?:\/\/(www\.)?linkedin\.com\/in\/[a-z0-9_-]+\/?$/gi;
+
+        const regex = new RegExp(expression);
+        let res = "";
+        if (url.match(regex)) {
+          res = "Valid URL";
+          container.style.color = "green";
+        } else {
+          res = "Invalid URL";
+          container.style.color = "red";
+        }
+        container.innerHTML = res;
+      }
+    </script>
+  </body>
+</html>
