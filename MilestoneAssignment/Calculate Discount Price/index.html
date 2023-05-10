@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount Price</title>
+    <!-- link with CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- calculate Discount Price Project -->
+    <header>
+      <h1>Calculate Discount Price</h1>
+    </header>
+    <!-- main context -->
+    <div class="content">
+      <span>
+        <label for="actualprice">Enter original price : </label>
+        <input type="number" id="actualprice" />
+      </span>
+      <span>
+        <label for="discountprice">Enter discount price : </label>
+        <input type="number" id="discountprice" />
+      </span>
+      <span class="btn">
+        <button id="discount-btn">Show Discount</button>
+        <button onclick="location.reload()">Refresh</button>
+      </span>
+    </div>
+    <footer>
+      <div class="output"></div>
+      <img src="hooray.gif" class="gif" alt="" />
+    </footer>
+
+    <!-- Javascript File -->
+    <script src="./script.js"></script>
+  </body>
+</html>
