@@ -16,3 +16,6 @@ function callback(num) {
 const doubleArray = double(originalArray, callback);
 
 console.log(doubleArray);
+
+// output:
+// [ 2, 4, 6, 8 ]
