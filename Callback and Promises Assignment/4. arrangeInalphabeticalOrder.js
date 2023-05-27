@@ -37,3 +37,6 @@ function extractTitles(books, callback) {
 }
 
 extractTitles(books, logTitles);
+
+// output:
+// Emma, Listen to Your Heart: The London Adventure, Pilgrim's Progress, Robinson Crusoe, The India Story
