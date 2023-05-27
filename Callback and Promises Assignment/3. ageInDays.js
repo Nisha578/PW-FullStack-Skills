@@ -17,3 +17,6 @@ function logResult(fullName,ageInDays) {
 }
 
 ageInDays(person,logResult);
+
+// output:
+// The person's full name is Mithun S and their age in daya is 7300
