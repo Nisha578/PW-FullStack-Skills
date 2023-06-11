@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(./sunnyday.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0px;
+}
+
+#bee {
+  position: absolute;
+  bottom: 0px;
+  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+#pos {
+  color: white;
+  font-size: 18pt;
+}
