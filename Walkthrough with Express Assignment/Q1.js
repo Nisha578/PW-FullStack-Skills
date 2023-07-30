@@ -1,3 +1,11 @@
+// Q.1 Bui:d a Server Using Http Modu:e Node<S with api endpoints for Getting Products Dat9
+// " ‘/’G →G send msg as “We:come to Men & Women Dummy Data”F
+// " G‘/men’ →G send 10 products data of menF
+// " ‘/women’G →G send 10 products data of wome;
+// " ‘/other’G → send response as page not found
+// Hin#: You can use any data, send data in json format
+
+
 const http = require('http');
 
 const PORT = 5032;
