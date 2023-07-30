@@ -1,3 +1,9 @@
+// Q.3_Create a Basic Server with Different Routes using Express
+// " `/`G G → send response as {msg:`I am homepage`^
+// " `/about`G → send response as {msg:`I am about page`^
+// " `/contact ` → send response as {emai::`suppor#@pwskills.com`}
+
+
 const express = require('express');
 const app = express();
 
